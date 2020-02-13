@@ -1,0 +1,41 @@
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	width: 100%;
+	background: none;
+	pointer-events: none;
+
+	svg {
+		max-width: 100%;
+	}
+
+	i {
+		color: $blue;
+	}
+
+	.mobile-overlay {
+		background: black;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&--background-color {
+		background-color: white;
+	}
+
+	&--logo {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	@mixin atMedium {
+		background: white;
+		pointer-events: auto;
+		box-shadow: 0 1px 60px rgba(33, 33, 33, .2);
+	}
+}

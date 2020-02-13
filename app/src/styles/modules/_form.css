@@ -1,0 +1,42 @@
+.form {
+	label {
+		display: none;
+	}
+
+	.form-control {
+		border-radius: 0;
+		border: solid 1px $gold;
+		font-family: $primaryFont;
+		color: $darkBlue;
+		height: calc(1.5em + 0.35rem + 2px);
+		padding: 0.3rem 0.55rem;
+		font-size: 0.875rem;
+	}
+
+	.form-group {
+		small {
+			color: red;
+		}
+	}
+
+	::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		color: $darkBlue;
+		font-family: $primaryFont;
+	}
+	::-moz-placeholder {
+		/* Firefox 19+ */
+		color: $darkBlue;
+		font-family: $primaryFont;
+	}
+	:-ms-input-placeholder {
+		/* IE 10+ */
+		color: $darkBlue;
+		font-family: $primaryFont;
+	}
+	:-moz-placeholder {
+		/* Firefox 18- */
+		color: $darkBlue;
+		font-family: $primaryFont;
+	}
+}

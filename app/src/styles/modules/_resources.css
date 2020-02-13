@@ -1,0 +1,20 @@
+.resources {
+	&--grid-item {
+		text-align: center;
+		float: left;
+		width: 50%;
+		border: solid 1px white;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+
+		i.fa {
+			color: $gold;
+		}
+	}
+
+	@mixin atMedium {
+		&--grid-item {
+			width: 33.33333%;
+		}
+	}
+}
