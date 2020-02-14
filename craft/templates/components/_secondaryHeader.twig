@@ -1,0 +1,25 @@
+        <!--secondaryHeader-->
+        <section class="section secondaryHeader">
+
+            <!--Background-->
+            {% set image = block.backgroundImage.one() %}
+            <div class="secondaryHeader__image" {% if image %} style="background-image: url('{{ image.url }}');"{% endif %}></div>
+
+            
+            <!--Gradient Overlay
+            <div class="secondaryHeader__gradient-overlay"></div>
+            -->
+
+            <div class="container h-100">
+                <div class="row justify-content-center justify-content-sm-start">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-6 pt-5">
+                        {{ block.headline }}
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-6 offset-xs-3 pt-5">
+                        {% set image = block.featuredProductImage.one() %}
+                            <img {% if image %} class="secondaryHeader__product" src="{{ image.url }}"{% endif %}>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END-->

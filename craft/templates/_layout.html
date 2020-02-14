@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>LMNTL</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+ 
+    <link rel="stylesheet" href="{{ siteUrl }}css/styles.css">
+
+
+</head>
+
+{% set sectionHandle = entry.getSection().handle %}
+
+<body class="{{ entry.slug }}{% if sectionHandle == 'news' %} {{ entry.getSection().handle }}{% endif %}">
+
+
+
+
+{% include('_navigation') %}
+
+<!--Page Content-->
+{% block content %}
+
+{% endblock %}
+<!--END-->
+
+{% include('_footer') %}
+
+
+
+
+<!--App.js-->
+<script src="{{ siteUrl }}js/App.js"></script>
+</body>
+</html>

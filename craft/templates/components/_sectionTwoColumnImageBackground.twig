@@ -1,0 +1,81 @@
+<!--sectionTwoColumnImageBackground-->
+        <section class="section sectionTwoColumnSolidBackground">
+            
+            <!--Dual Fluid Background-->
+            <div class="sectionTwoColumnSolidBackground__background">
+                <!--Left-->
+                {% set image = block.backgroundImage1.one() %}
+                <div class="col-12 col-md-6 float-left sectionTwoColumnSolidBackground--match-left sectionTwoColumnSolidBackground--background-column" {% if image %} style="background-image: url('{{ image.url }}'); height: 600px;"{% endif %}>
+                <!--Background-->
+                </div>
+                <!--Right--> 
+                {% set image = block.backgroundImage2.one() %}
+                <div class="col-12 col-md-6 float-right sectionTwoColumnSolidBackground--match-right sectionTwoColumnSolidBackground--background-column" {% if image %} style="background-image: url('{{ image.url }}');  height: 600px;"{% endif %}>
+                </div> 
+            </div>
+    
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 py-5 pl-md-5 pr-md-5 pl-xl-5 sectionTwoColumnSolidBackground--match-left">
+                        <div class="d-block py-3 pl-3 pr-3 text-center">
+                            <div class="row">
+                                <div class="col">
+                                    {{ block.headline1 }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    {% if block.itemImage1.count() %}
+                                    <div class="row justify-content-center">
+                                        {% for column in block.itemImage1.all() %}
+                                        <div class="col-2  sectionTwoColumnSolidBackground__oils">
+                                            <img src="{{ column.url }}" class="img-fluid" />
+                                        </div>
+                                        {% endfor %} 
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>
+                                        {{ block.textContent1 }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 py-5 pl-md-5 pr-md-5 pl-xl-5 sectionTwoColumnSolidBackground--match-right">
+                        <div class="d-block py-3 pl-3 pr-3 text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        {{ block.headline2 }}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        {% if block.itemImage2.count() %}
+                                        <div class="row">
+                                            {% for column in block.itemImage2.all() %}
+                                        <div class="col-2 sectionTwoColumnSolidBackground__crystals">
+                                                <img src="{{ column.url }}" class="" />
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            {{ block.textContent2 }}
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>

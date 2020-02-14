@@ -1,0 +1,16 @@
+        <!--sectionTitleSubheadLeft-->
+        <section class="section sectionTitleSubheadLeft">
+
+            <!--Background-->
+            {% set image = block.backgroundImage.one() %}
+            <div class="sectionTitleSubheadLeft__image" {% if image %} style="background-image: url('{{ image.url }}');"{% endif %}></div>
+            
+            <div class="container h-100">
+                <div class="row justify-content-left">
+                    <div class="col-12 text-left">
+                            {{ block.headline }}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END-->

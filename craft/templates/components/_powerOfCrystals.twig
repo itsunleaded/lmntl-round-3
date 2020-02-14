@@ -1,0 +1,19 @@
+<!--powerOfCrystals-->
+        <section class="section powerOfCrystals">
+
+            <!--Background-->
+            {% set image = block.backgroundImage.one() %}
+            <div class="powerOfCrystals__image" {% if image %} style="background-image: url('{{ image.url }}');"{% endif %}></div>
+             
+            <!--Gradient Overlay
+            <div class="secondaryHeader__gradient-overlay"></div>-->
+            
+            <div class="container">
+                <div class="row justify-content-center justify-content-sm-start section1__pg-default">
+                    <div class="col-12">
+                            {{ block.headline }}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END-->

@@ -1,0 +1,25 @@
+{% set superTable = block.sectionContent.first() %}
+<!--singleColumn-->
+<section class="section {{ superTable.sectionClasses }}">
+    <div class="container">
+        <div class="row">
+            {% set image = superTable.backgroundImage.one() %}
+            <div class="col-12 {{ superTable.backgroundColor }} {% if image %}section__image-container{% endif %}">
+                {% if image %}
+                <img src="{{ image.url }}" />
+                {% endif %}
+                <div class="{{ superTable.rowClasses | default('row justify-content-center') }}">
+                    <div class="{{ superTable.columnClasses | default('col-11 col-md-7 text-center') }}">
+                        <div class="section__wrapper d-block w-100 h-100">
+                            
+                            {{ superTable.columnContent }}
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!--END-->
