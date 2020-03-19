@@ -1,0 +1,245 @@
+/*------------------------------------------------------------------
+Slice slider and carousel
+
+[Table of contents]
+1. Basic structure styles
+2. Navigation styles
+3. State styles
+4. Vertical styles
+5. Slides align
+
+------------------------------------------------------------------*/
+/**
+    Element classes:
+    .slice-viewport - viewport, restricts area in which slides are shown
+    .slice-stage - stage, all slides are put in it
+    .slice-slide - slide
+    .slice-arrow - arrow navigation
+    .slice-prev - previous arrow
+    .slice-next - next arrow
+    .slice-dot - dot navigation
+    .slice-dots - dots container
+
+    Slice root element classes:
+    .slice-not-enought-slides - added to the root slider element wheh there is not enought slides
+    .slice-slider-vertical - vertical view
+    .slice-slider-adaptive - adaptive view, i.e. stage height(width in vertical mode) is fixed and resized to maximum active slide height
+
+    State classes:
+    .slice-current - current slide
+    .slice-current-resized - resized slide, used in Slide plugin to mark out resized slides
+    .slice-active - active slide, slides that are visible in the viewport
+    .slice-hidden - hidden element, added to elements that are not required or disabled plugin elements
+    .slice-disabled - disabled elements, i.e. next arrow when last slide is reached
+**/
+/*------------------------------------------------------------------
+[1. Basic structure styles]
+------------------------------------------------------------------*/
+.slice-slider {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.slice-slider,
+.slice-slider *,
+.slice-slider *::before,
+.slice-slider *::after {
+  box-sizing: border-box;
+}
+.slice-slider:not(.slice-initialized) > * {
+  display: none;
+}
+.slice-stage-wrap,
+.slice-viewport,
+.slice-layer {
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -ms-flex-order: 5;
+  order: 5;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 1px;
+  min-height: 1px;
+}
+.slice-layer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+}
+.slice-view-layer {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.slice-viewport {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+}
+.slice-stage {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+.slice-slide {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  user-select: none;
+}
+/*------------------------------------------------------------------
+[2. Navigation styles]
+------------------------------------------------------------------*/
+.slice-dots,
+.slice-arrows {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+}
+.slice-arrows,
+.slice-arrow {
+  position: relative;
+  -ms-flex-order: 6;
+  order: 6;
+}
+.slice-arrow,
+.slice-dot {
+  position: relative;
+  z-index: 2;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  outline: 0 none;
+  text-align: center;
+  line-height: 1;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.1s linear 0s;
+}
+.slice-arrow {
+  display: block;
+  color: #333;
+}
+.slice-arrow.slice-disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #ccc !important;
+}
+.slice-arrow:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+.slice-dots {
+  position: relative;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-order: 7;
+  order: 7;
+}
+.slice-dot {
+  width: 10px;
+  height: 10px;
+  background: #333;
+}
+.slice-dot:hover,
+.slice-dot.slice-current {
+  background-color: #007bff;
+  text-decoration: none;
+}
+.slice-dot.slice-current {
+  cursor: default;
+}
+/*------------------------------------------------------------------
+[3. State styles]
+------------------------------------------------------------------*/
+.slice-hidden {
+  display: none;
+}
+.slice-focus-on-select .slice-slide:not(.slice-current) {
+  cursor: pointer;
+}
+/*------------------------------------------------------------------
+[4. Vertical styles]
+------------------------------------------------------------------*/
+.slice-slider-vertical .slice-viewport {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.slice-slider-vertical .slice-stage-wrap {
+  width: auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.slice-slider-vertical .slice-stage {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.slice-slider-vertical .slice-slide {
+  width: 100%;
+}
+.slice-slider-vertical.slice-has-fixed-view .slice-slide,
+.slice-slider-vertical.slice-has-fixed-view .slice-viewport,
+.slice-slider-vertical.slice-has-fixed-view .slice-stage,
+.slice-slider-vertical.slice-has-fixed-view .slice-layer {
+  width: auto;
+}
+/*------------------------------------------------------------------
+[5. Stage slides align]
+------------------------------------------------------------------*/
+.slice-stage-center .slice-stage,
+.slice-stage-center .slice-slide {
+  -ms-flex-align: center;
+  align-items: center;
+}
+.slice-stage-start .slice-stage,
+.slice-stage-start .slice-slide {
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+.slice-stage-end .slice-stage,
+.slice-stage-end .slice-slide {
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}

@@ -1,41 +1,60 @@
-.header {
+header {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 	position: fixed;
 	top: 0;
 	z-index: 20;
-	width: 100%;
-	background: none;
 	pointer-events: none;
+	width: 100%;
 
 	svg {
 		max-width: 100%;
 	}
 
 	i {
-		color: $blue;
+		color: black;
+	}
+
+	#logo {
+		pointer-events: all;
+	}
+
+	#menu-button {
+		cursor: pointer;
+		pointer-events: all;
 	}
 
 	.mobile-overlay {
 		background: black;
-		position: absolute;
+		display: inline-block;
+		position: fixed;
 		top: 0;
 		left: 0;
-		opacity: 0;
-		visibility: hidden;
+		height: 100vh;
+		width: 100%;
+		transform: scaleY(0);
+		/*opacity: 0;*/
+		/*visibility: hidden;*/
 	}
 
-	&--background-color {
-		background-color: white;
+	.invert-color {
+		fill: #ffffff !important;
+		color: #ffffff !important;
+		transition: all 0.6s ease;
 	}
 
-	&--logo {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
+	.invert-nav-color {
+		color: #ffffff !important;
 	}
 
-	@mixin atMedium {
-		background: white;
-		pointer-events: auto;
-		box-shadow: 0 1px 60px rgba(33, 33, 33, .2);
+	#logo .cls-1 {
+		transition: all 0.6s ease;
+	}
+
+	#menu-button i {
+		transition: all 0.6s ease;
+	}
+
+	@mixin atMedium { 
 	}
 }

@@ -4,22 +4,29 @@ import 'bootstrap';
 import Preloader from './modules/Preloader';
 import Navigation from './modules/Navigation';
 import MatchHeight from './modules/MatchHeight';
-import ImageFill from './modules/ImageFill';
-import ImageGrid from './modules/ImageGrid';
-import Map from './modules/Map';
+import calloutHoverBackground from './components/calloutHoverBackground';
+import headerBackgroundVideo from './components/headerBackgroundVideo';
+import leadershipTeam from './components/leadershipTeam';
+import resourcesOverview from './components/resourcesOverview';
+import Lightbox from './modules/Lightbox';
 
 document.addEventListener('DOMContentLoaded', () => {
 	const preloader = new Preloader();
 	const navigation = new Navigation();
 	const match = new MatchHeight();
-	const fill = new ImageFill();
-	const grid = new ImageGrid();
-	const map = new Map();
+	const hoverBackground = new calloutHoverBackground();
+	const headerVideo = new headerBackgroundVideo();
+	const leadership = new leadershipTeam();
+	const resources = new resourcesOverview();
+	const lightbox = new Lightbox();
 
 	preloader.init();
 	navigation.init();
 	match.init();
-	fill.init();
-	grid.init();
-	map.init();
+	hoverBackground.init();
+	headerVideo.init();
+	leadership.init();
+	lightbox.init();
+
+	if ($('section').hasClass('resourcesOverview')) resources.init();
 });

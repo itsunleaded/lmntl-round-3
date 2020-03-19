@@ -1,0 +1,121 @@
+.secondaryHeader {
+
+	height: auto;
+	display: block;
+	position: relative;
+	padding-top: 8rem;
+	padding-bottom: 1rem;
+
+	&__image {
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom right;
+	}
+
+	&__product {
+		float: left;
+		width: 227px;
+		margin-top: -20px;
+		padding-left: 56px;
+    }
+ 
+	&__logo {
+		float: left;
+		width: 286px; 
+	
+	} 
+
+	&__fragrance {
+		width: 100%;
+		margin-top: -20px;
+		margin: 0 auto;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	
+	} 
+
+
+	em {
+
+        a {
+            color: black;
+        }
+
+    }
+
+
+
+	@mixin atSmall {
+
+		&__product {
+			margin-top: -20px;
+			margin-left: 25px;
+		
+          }
+
+		}
+
+	@mixin atMedium {
+
+		&__product {
+			float: left;
+			width: 227px;
+			margin-top: -20px;
+			margin-left: 55px;
+		
+          }
+
+	}
+
+	@mixin atLarge {
+
+		padding-top: 10rem;
+		padding-bottom: 2rem;
+
+		&__product {
+			margin-top: -60px;
+			margin-left: -80px;
+		
+        }
+
+		&__logo {
+		
+			width: 368px;
+		
+		} 
+
+		.container {
+			padding-left:80px;
+		}
+
+	}
+
+	@mixin atXLarge {
+		padding-top: 10rem;
+		padding-bottom: 6rem;
+
+		.container {
+			padding-left:150px;
+		}
+
+	}
+
+	@mixin atXXLarge {
+
+		.container {
+			padding-left:225px;
+		}
+
+		&__product {
+			margin-top: -50px;
+			margin-left: 0px;
+		
+		}
+
+	}
+}

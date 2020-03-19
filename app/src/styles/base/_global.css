@@ -1,153 +1,222 @@
 html {
-	height: 100%;
-	margin: 0;
+
+  height:100%;
+  margin: 0;
+
 }
 
 body {
-	color: white;
-	background: $bodyBackgroundColor;
-	height: 100%;
-	font-family: $primaryFont;
-	font-weight: 400;
-	counter-reset: listCounter 0;
-}
 
-:root {
-	font-size: 16px;
-}
+  color: white;
+  background: white;
+  height:100%;
+  font-family: factoria, serif;
+  font-style: normal;
+  font-weight: 400;
 
-h1,
-h2 {
-	font-family: $secondaryFont;
-	text-transform: uppercase;
-	line-height: 1;
-
-	strong {
-		font-size: 165%;
-	}
 }
 
 h1 {
-	.alt {
-		font-family: $primaryFont;
-		font-weight: $medium;
-		font-size: 28%;
-	}
-	line-height: 1;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 1.3;
+  letter-spacing: 10px;
 }
 
 h2 {
-	font-size: 2.5rem;
+  color: black;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  letter-spacing: 3px;
+  padding-left: 1rem;
 }
 
-h3 {
-	font-family: $primaryFont;
-	font-weight: $regular;
-	text-transform: uppercase;
-	line-height: 1.4;
-	font-size: 0.9375rem;
+h4 {
+  text-transform: uppercase;
+  font-size: 0.71rem;
+  letter-spacing: .2rem;
+  color: white;
 }
 
-h6 {
-	text-transform: uppercase;
-	margin-bottom: 1rem;
-}
 
 p {
-	font-family: $primaryFont;
-	font-weight: $regular;
-	line-height: 1.75;
-	font-size: 0.8125rem;
-	margin-bottom: 1.5rem;
+  color: white;
+  font-size: 0.675rem;
+  line-height: 1.9;
+  font-family: factoria, serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.25rem;
+
+  &:last-of-type {
+      margin-bottom: 2rem;
+   }
+} 
+
+ul {
+
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+      color: black;
+      font-size: 0.6875rem;
+      margin-bottom: 1.25rem;
+      position: relative;
+
+      strong {
+          color: $darkGray;
+          text-transform: uppercase;
+      }
+
+      &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: $darkGray;
+       }
+  }
+  
 }
 
-a {
-	font-family: inherit;
-	line-height: inherit;
-	text-decoration: none;
-	color: inherit;
+:root {
+  font-size: 16px;
+}
 
-	&:hover {
-		color: $gold;
-	}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: factoria, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: factoria, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: factoria, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: factoria, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+section {
+  figure {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Button Style */
+
+a {
+
+  font-family: inherit;
+  font-size: 0.65rem;
+  color: inherit;
+  border: inherit;
+  pointer-events: auto;
+  text-decoration: underline;
+
+  &:hover {
+      text-decoration: underline;
+   }
+
 }
 
 em {
-	a {
-		line-height: 1;
-		font-family: $primaryFont;
-		font-weight: $medium;
-		color: white;
-		background: $gold;
-		padding: 0.25rem 1.15rem;
-		text-decoration: none;
-		font-style: normal;
-		text-transform: uppercase;
-		transition: all 0.9s easeOutExpo;
 
-		&:hover {
-			background: $darkBlue;
-			color: white;
-			text-decoration: none;
-		}
-	}
+
+  a {
+      display: inline-block;
+      text-transform: uppercase;
+      color: white;
+      font-size: .7rem;
+      font-family: inherit;
+      padding-left: 0.875rem;
+      padding-right: 0.875rem;
+      padding-top: 0.35rem;
+      padding-bottom: 0.3rem;
+      transition: all 0.5s ease-in-out;
+      font-style: normal;
+      border: 1px solid white;
+      text-decoration: none;
+  }
+
+  &:hover {
+      background: $gray;
+      color: white;
+      text-decoration: none;
+  }
 }
 
-ul {
-	padding: 0;
-	padding-left: 1rem;
-	margin-bottom: 2rem;
-	li {
-		font-family: $primaryFont;
-		font-weight: $regular;
-		line-height: 1.75;
-		font-size: 0.8125rem;
-		margin-bottom: 1.15rem;
-		color: $gold;
-	}
+
+/* Product Type */
+@mixin atSmall {
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    padding-left:2rem;
+  }
+
 }
 
-ol {
-	list-style: none;
+@mixin atMedium {
+  
+  h1 {
+    font-size: 2.45rem;
+    margin-top: -10px;
+    line-height: 1.1;
+  }
 
-	li {
-		counter-increment: listCounter;
-		position: relative;
-		text-transform: uppercase;
-		color: $blue;
-		font-size: 1.25rem;
-		line-height: 1.4;
-		margin-bottom: 1.5rem;
-		padding-left: 3.75rem;
-		&:before {
-			content: counter(listCounter);
-			font-family: $secondaryFont;
-			font-size: 5rem;
-			line-height: 1;
-			position: absolute;
-			left: 0;
-			color: #c8c8c6;
-			top: -0.75rem;
-		}
-	}
+  h2 {
+    font-size: 2.2rem;
+    margin-top: -10px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
 }
 
-.btn {
-	line-height: 1;
-	font-family: $primaryFont;
-	font-weight: $medium;
-	color: white;
-	background: $gold;
-	padding: 0.25rem 1.15rem;
-	text-decoration: none;
-	font-style: normal;
-	text-transform: uppercase;
-	transition: all 0.9s easeOutExpo;
-	border-radius: 0;
+@mixin atLarge {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 
-	&:hover {
-		background: $darkBlue;
-		color: white;
-		text-decoration: none;
-	}
+  h2 {
+    font-size: 3.35rem;
+    margin-top: -10px;
+    line-height: 4rem;
+    padding-left: 2rem;
+  }
+
+  p {
+    padding-left: 2rem;
+  }
+}
+
+@mixin atXXLarge {
+  h1 {
+    font-size: 6rem;
+  }
+
+  p {
+    margin-top: 4px;
+  }
 }

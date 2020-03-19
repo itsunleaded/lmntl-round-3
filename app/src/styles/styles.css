@@ -5,13 +5,13 @@
 /* Fonts */
 /**************************/
 @import '../../../node_modules/font-awesome/css/font-awesome.min';
-@import url("https://use.typekit.net/wih2dpe.css");
+
 
 /* Vendor */
 /**************************/
 @import "../../../node_modules/bootstrap/dist/css/bootstrap";
-@import 'vendor/bourgeois';
-@import url("https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css");
+@import 'vendor/slice/css/slice.css';
+
 
 /* Base */
 /**************************/
@@ -21,17 +21,27 @@
 
 /* Global */
 /**************************/
+@import 'modules/_footer';
+@import 'modules/_header';
+@import 'modules/_navigation';
 
 /* Modules */
 /**************************/
-@import 'modules/_header';
-@import 'modules/_navigation';
-@import 'modules/_section';
-@import 'modules/_grid';
-@import 'modules/_resources';
-@import 'modules/_form';
+@import "modules/_section";
+@import "modules/_inverted";
+
 
 /* Components */
 /**************************/
-@import 'modules/_faq';
-@import 'modules/_map';
+@import 'modules/_secondaryHeader';
+@import 'modules/_sectionProducts';
+@import 'modules/_sectionCustomize';
+@import 'modules/_singleColumn';
+@import 'modules/_sectionTitleSubhead';
+@import 'modules/_sectionTitleSubheadLeft';
+@import 'modules/_sectionTitleSubheadLeftCol';
+@import 'modules/_sectionTitleSubheadOffsetLeft';
+@import 'modules/_sectionTwoColumnImageBackground.css';
+@import 'modules/_sectionTwoColumnSolidBackground.css';
+@import 'modules/_aboutOils.css';
+@import 'modules/_powerOfCrystals.css';

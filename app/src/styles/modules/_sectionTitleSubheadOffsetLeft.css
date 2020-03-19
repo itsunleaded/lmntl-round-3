@@ -1,0 +1,134 @@
+.sectionTitleSubheadOffsetLeft {
+	height: auto;
+	display: block;
+	position: relative;
+
+	&__image {
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top left;
+		backgrount-color: black;
+	}
+
+	h1 {
+		color: black;
+		font-size: 4.5rem;
+		line-height: 1.25;
+		margin-bottom: 1rem;
+		letter-spacing: 10px;
+		padding-left: 2rem;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		color: white;
+		font-size: 0.95rem;
+		line-height: 1;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		font-size: 1.15rem;
+		letter-spacing: 0.3125rem;;
+		padding-left: 2rem;
+	}
+
+	p {
+		color: black; 
+	
+		font-size: 0.9375rem;
+		line-height: 1.9;
+		letter-spacing: 0.140625rem;
+		width: 80%;
+		float: right;
+		display: inline-block;
+	}
+
+	em {
+
+        a {
+            border: 1px solid black;
+		}
+		
+    }
+
+	a {
+		color: black;
+	  }
+
+	&__gradient-overlay {
+		display: block; 
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgb(34, 37, 40);
+		background: -moz-linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		background: -webkit-linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		background: linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(
+				startColorstr="#222528",
+				endColorstr="#000000",
+				GradientType=1
+			);
+	}
+
+	@mixin atSmall {
+	}
+
+	@mixin atMedium {
+		h1 {
+			font-size: 6.15rem;
+		}
+
+		h2 {
+			font-size: 1.2rem;
+		}
+	}
+
+	@mixin atLarge {
+	
+		h1 {
+			color: black;
+			font-size: 12.5rem;
+			line-height: 1.25;
+			margin-bottom: 1rem;
+			letter-spacing: 10px;
+			padding-left: 11rem;
+		}
+
+		h4 {
+			padding-left: 11rem;
+		}
+		p {
+			width: 60%;
+		}
+	}
+
+	@mixin atXXLarge {
+		h1 {
+			font-size: 12.5rem;
+			padding-left: 15rem;
+		}
+
+		h2 {
+			font-size: 1.725rem;
+		}
+		
+		h3 {
+			color: black;
+		    text-transform: uppercase;
+		    letter-spacing: 2rem;
+		}
+		h4 {
+			padding-left: 15rem;
+		}
+
+	}
+}

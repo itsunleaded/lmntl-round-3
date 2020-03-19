@@ -1,42 +1,73 @@
 .form {
-	label {
-		display: none;
-	}
 
-	.form-control {
-		border-radius: 0;
-		border: solid 1px $gold;
-		font-family: $primaryFont;
-		color: $darkBlue;
-		height: calc(1.5em + 0.35rem + 2px);
-		padding: 0.3rem 0.55rem;
-		font-size: 0.875rem;
-	}
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
 
-	.form-group {
-		small {
-			color: red;
-		}
-	}
+    .form-control {
 
-	::-webkit-input-placeholder {
-		/* Chrome/Opera/Safari */
-		color: $darkBlue;
-		font-family: $primaryFont;
-	}
-	::-moz-placeholder {
-		/* Firefox 19+ */
-		color: $darkBlue;
-		font-family: $primaryFont;
-	}
-	:-ms-input-placeholder {
-		/* IE 10+ */
-		color: $darkBlue;
-		font-family: $primaryFont;
-	}
-	:-moz-placeholder {
-		/* Firefox 18- */
-		color: $darkBlue;
-		font-family: $primaryFont;
-	}
+        border-radius: 0;
+        border: 0px solid $lightGray;
+        border-bottom: 1px solid $lightGray;
+        font-size: 0.75rem;
+        color: $darkGray;
+        padding-left: 0;
+        outline: none;
+        font-family: $clanBook;
+
+        &:focus {
+             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+
+         }
+
+    }
+
+    button {
+        background-color: $yellow;
+        border-color: $yellow;
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        line-height: 1;
+        letter-spacing: 0.0625rem;
+        margin-top: 1.0rem;
+
+        &:hover {
+
+            background-color: $darkGray;
+            border-color: $darkGray;
+         }
+
+    }
+
+    small {
+        font-size: 60%;
+    }
+
+    .text-muted {
+        color: #d90000 !important;
+    }
+
+    ul.errors {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+
+        li {
+            color: inherit;
+            font-size: inherit;
+            list-style-type: none;
+            padding-left: 0px;
+            margin-left: 0px; 
+            
+            &:before {
+                content: '';
+            }
+        }
+
+    }
+
 }
