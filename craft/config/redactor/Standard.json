@@ -14,7 +14,7 @@
 		"file"
 	],
 	"plugins": [ "fullscreen", "video", "fontcolor", "beyondgrammar", "alignment", "counter" ],
-	"fontcolors": [ "#977512", "#243746", "#1c2b35", "#efefed", "#f1f1ef", "#d0d0ce", "#FFF", "#000" ],
+	"fontcolors": [ "#b2a349", "#243746", "#1c2b35", "#efefed", "#f1f1ef", "#d0d0ce", "#FFF", "#000" ],
 	"linkNewTab": true,
 	"toolbarFixed": true,
 	"formatting": [ "p", "h1", "h2", "h3", "h4", "h5", "h6", "small" ]

@@ -1,0 +1,126 @@
+.navigation {
+
+
+        margin-top: 3rem;
+
+        ul {
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: factoria, serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.55rem;
+                    line-height: 1;
+                    opacity: 0;
+                    visibility: hidden;
+                    position: relative;
+                    display: inline-block;
+                }
+            }
+
+
+        }
+
+
+    @mixin atMedium {
+
+        ul {
+            li {
+                padding-right: 1.25rem;
+            }
+        }
+
+    }
+
+
+    @mixin atLarge {
+
+        margin-top: 0;
+        pointer-events: auto;
+
+        ul {
+
+            li {
+
+                display: inline-block;
+                padding-top: 0.25rem;
+                padding-bottom: 0rem;
+                padding-right: 1.25rem;
+
+                &:last-child {
+                    padding-right: 0rem;
+                 }
+
+                a {
+
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                    font-size: 0.4625rem;
+                    text-transform: uppercase;
+                    transition: all 0.4s ease-out;
+                    position: relative;
+                    letter-spacing: 2px;
+
+                    &:hover {
+
+                        color: $white;
+                        text-decoration: none;
+
+                     }
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 0%;
+                        height: 1px;
+                        background: $white;
+                        position: absolute;
+                        bottom: -0.25rem;
+                        transform-origin: left center;
+                     }
+
+
+                }
+
+
+
+            }
+
+        }
+
+        &--active {
+            border: 1px solid white;
+            padding-left: 0.875rem;
+            padding-right: 0.875rem;
+            padding-top: 0.35rem;
+            padding-bottom: 0.3rem;
+
+        }
+
+    }
+
+
+    @mixin atXXLarge {
+
+
+        ul {
+            li {
+                padding-right: 1.95rem;
+            }
+        }
+
+    }
+
+
+}

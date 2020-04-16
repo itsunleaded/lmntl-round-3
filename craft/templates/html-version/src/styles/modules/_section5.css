@@ -1,0 +1,102 @@
+.section5 {
+	height: auto;
+	display: block;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	&__image {
+		top: none!important;
+	}
+
+	img {
+		width: 100%;
+	  }
+
+	h1 {
+		color: #000000;
+		font-size: 2.40rem;
+		line-height: 1.25;
+		margin-bottom: 1rem;
+		padding-left: 150px;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		color: #ffffff;
+		font-size: 0.95rem;
+		line-height: 1;
+	}
+
+	h3 {
+		color: #000000;
+		padding-left: 150px;
+	}
+
+	p {
+		color: #000000;
+		font-size: 1.000rem;
+		line-height: 1.9;
+		font-family: 'factoria', serif;
+		width: 80%;
+		padding-left: 400px;
+	}
+
+	a {
+		color: #000000 !important;
+		border: 1px solid #000000 !important;
+	}
+
+	&__gradient-overlay {
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgb(34, 37, 40);
+		background: -moz-linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		background: -webkit-linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		background: linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(
+				startColorstr="#222528",
+				endColorstr="#000000",
+				GradientType=1
+			);
+	}
+
+	@mixin atSmall {
+	}
+
+	@mixin atMedium {
+		h1 {
+			font-size: 2.15rem;
+			margin-top: -30px;
+		}
+
+		h2 {
+			font-size: 1.2rem;
+		}
+	}
+
+	@mixin atLarge {
+		
+	}
+
+	@mixin atXXLarge {
+		h1 {
+			font-size: 16.4375rem;
+			margin-left:-20px;
+		}
+
+		h2 {
+			font-size: 1.725rem;
+		}
+		
+		h3 {
+			color: #000000;
+		    text-transform: uppercase;
+		    letter-spacing: 2rem;
+		}
+	}
+}

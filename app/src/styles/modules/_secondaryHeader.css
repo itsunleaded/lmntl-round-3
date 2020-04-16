@@ -6,6 +6,10 @@
 	padding-top: 8rem;
 	padding-bottom: 1rem;
 
+	.header_lowerc {
+        font-size: 2.45rem;
+    }
+
 	&__image {
 		height: 100%;
 		width: 100%;
@@ -108,12 +112,12 @@
 	@mixin atXXLarge {
 
 		.container {
-			padding-left:225px;
+			padding-left:150px;
 		}
 
 		&__product {
 			margin-top: -50px;
-			margin-left: 0px;
+			margin-left: 100px;
 		
 		}
 

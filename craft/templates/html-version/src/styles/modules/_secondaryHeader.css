@@ -1,0 +1,224 @@
+.secondaryHeader {
+	height: auto;
+	display: block;
+	position: relative;
+	padding-top: 8rem;
+	padding-bottom: 1rem;
+
+	&__image {
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom right;
+	}
+
+	&__product {
+		float: left;
+		width: 227px;
+		margin-top: -20px;
+		padding-left: 56px;
+	
+	} 
+
+	&__logo {
+		float: left;
+		width: 286px;
+	
+	} 
+
+	&__fragrance {
+		width: 100%;
+		margin-top: -20px;
+		margin: 0 auto;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	
+	} 
+
+	&__gradient-overlay {
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgb(58, 58, 58);
+		background: -moz-linear-gradient(3000deg, rgba(73, 73, 73, 0) 7%, rgba(56, 56, 56, 0.253) 100%);
+		background: -webkit-linear-gradient(300deg, rgba(77, 77, 77, 0) 7%, rgba(87, 87, 87, 0.151) 100%);
+		background: linear-gradient(300deg, rgba(58, 58, 58, 0) 7%, rgba(85, 85, 85, 0.853) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(
+				startColorstr="#000000",
+				endColorstr="#000000",
+				GradientType=1
+			);
+	}
+
+	h1 {
+		color: white;
+		font-size: 2.4rem;
+		line-height: 1.25;
+		margin-top: -7px;
+	}
+
+	h2 {
+		color: black;
+		font-size: 0.85rem;
+		line-height: 1;
+		letter-spacing: 3px;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		font-size: 1rem;
+		letter-spacing: .7rem;
+		color: white;
+	}
+
+	p {
+		color: black;
+		font-size: 0.9375rem;
+		line-height: 1.9;
+		font-family: factoria, serif;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 2px;
+		margin-top: 0px;
+	}
+
+	.no-left-pad {
+		padding-right: 0rem;
+	}
+
+	em {
+
+
+        a {
+            color: black;
+        }
+
+    }
+
+
+
+	@mixin atSmall {
+
+		&__product {
+			float: left;
+			width: 227px;
+			margin-top: -20px;
+			margin-left: 25px;
+		
+		  }
+
+		h1 {
+			color: white;
+			font-size: 3rem;
+			line-height: 1.25;
+			margin-bottom: 1rem;
+			margin-top: -10px;
+		}
+	
+		h2 {
+			color: black;
+			font-size: 1.05rem;
+			line-height: 1;
+			letter-spacing: 3px;
+		}
+	
+		p {
+			color: black;
+			line-height: 1.9;
+			font-family: factoria, serif;
+			font-style: normal;
+			font-weight: 400;
+			letter-spacing: 2px;
+		}
+	}
+
+	@mixin atMedium {
+
+		&__product {
+			float: left;
+			width: 227px;
+			margin-top: -20px;
+			margin-left: 55px;
+		
+		  }
+
+		h1 {
+			font-size: 3.45rem;
+		}
+
+		h2 {
+			font-size: 1.2rem;
+		}
+
+	}
+
+	@mixin atLarge {
+
+		padding-top: 10rem;
+		padding-bottom: 1rem;
+
+		&__pad {
+			padding-left: 3.5rem;
+		}
+
+		&__product {
+			float: left;
+			width: 227px;
+			margin-top: -120px;
+			margin-left: -60px;
+		
+		}
+		&__logo {
+		
+			width: 368px;
+		
+		} 
+
+	}
+
+	@mixin atXLarge {
+		padding-top: 10rem;
+		padding-bottom: 2rem;
+
+		&__pad {
+			padding-left: 9rem;
+		}
+
+		&__product {
+			float: left;
+			width: 227px;
+			margin-top: -120px;
+			margin-left: -130px;
+		
+		  }
+	}
+
+	@mixin atXXLarge {
+		h1 {
+			font-size: 5rem;
+		}
+
+		h2 {
+			font-size: 1.725rem;
+		}
+
+		&__padding {
+			padding-left: 9rem;
+		}
+
+		&__product {
+			float: left;
+			width: 227px;
+			margin-top: -100px;
+			margin-left: -80px;
+		
+		  }
+	}
+}

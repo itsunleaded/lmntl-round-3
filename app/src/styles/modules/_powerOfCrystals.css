@@ -40,6 +40,12 @@
 		padding-left: 150px;
 	}
 
+	h4 {
+		color: #000000;
+		font-size: 1.875rem;
+		letter-spacing: 1.5rem !important;
+	}
+
 	p {
 		color: #000000;
 		font-size: 1.000rem;
@@ -87,9 +93,6 @@
 	@mixin atLarge {
 		h1 {
 			font-size: 9.4375rem;
-		}
-		h4 {
-			font-size: 1.055rem;
 		}
 		
 	}

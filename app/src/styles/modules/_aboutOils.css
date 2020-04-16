@@ -38,6 +38,8 @@
 	h4 {
 		color: #000000;
 		padding-left: 150px;
+		font-size: 1.875rem;
+		letter-spacing: 1.5rem !important;
 	}
 
 	p {
@@ -108,7 +110,7 @@
 
 	@mixin atXXLarge {
 		h1 {
-			font-size: 16.4375rem;
+			font-size: 12.4375rem;
 			margin-left:-20px;
 			padding-left: 150px;
 			letter-spacing: 21px;

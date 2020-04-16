@@ -1,0 +1,117 @@
+/*================================================================*/
+.customize {
+    height: auto;
+    display: block;
+    position: relative;
+    /*padding-top: 7rem;*/
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        background-color: black;
+    }
+    a {
+    color: #000000 !important;
+    border: 1px solid black !important;
+    }
+    h1 {
+        color: #000000;
+        font-size: 2.40rem;
+        line-height: 1.25;
+    margin-bottom: 1rem;
+    line-height: 100px;
+    }
+    h2 {
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 0.95rem;
+        line-height: 1;
+    }
+    h3 {
+        color: #000000;
+    }
+    p {
+        color: #000000;
+        font-size: 1.000rem;
+        line-height: 1.9;
+        font-family: 'factoria', serif;
+    }
+    &__gradient-overlay {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(34, 37, 40);
+        background: -webkit-gradient(linear, right top, left top, color-stop(37%, rgba(34, 37, 40, 0)), to(rgba(0, 0, 0, 0.8533788515406162)));
+        background: linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(
+                startColorstr="#222528",
+                endColorstr="#000000",
+                GradientType=1
+            );
+    }
+    &__ht-default {
+        height: 100%;
+    }
+    &__pg-default {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    &__pd-default {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    &__cm-default {
+		padding-top: 100px;
+		padding-bottom: 30px;
+	}
+    &__padding {ß
+        padding-top: 14rem;
+        padding-bottom: 9rem;
+    }
+    @media (min-width: 576px) {
+    }
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 2.15rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+    }
+    @media (min-width: 992px) {
+        
+    }
+    @media (min-width: 1200px){
+        h1 {
+            font-size: 4.4375rem;
+            margin-left:-20px;
+        }
+
+        h2 {
+            font-size: 1.725rem;
+        }
+        h3 {
+            color: #000000;
+            letter-spacing: 2rem;
+            font-size: 3rem;
+        }
+
+    }
+
+}
+  

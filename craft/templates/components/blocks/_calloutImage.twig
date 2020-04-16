@@ -1,0 +1,10 @@
+{% if block.type == 'calloutImage' %}
+<div class="{{ block.rowClasses | default('row') }}">
+    <div class="{{ block.columnClasses | default('col-12') }}">
+        {% set image = block.image.one() %}
+        {% if image %}
+            <img src="{{ image.url }}" class="img-fluid" />
+        {% endif %} 
+    </div>
+</div>
+{% endif %} 

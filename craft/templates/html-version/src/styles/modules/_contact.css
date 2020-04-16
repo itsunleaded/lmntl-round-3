@@ -1,0 +1,50 @@
+.contact {
+
+    position: relative;
+
+    h1 {
+        color: white;
+        line-height: 1.2;
+    }
+
+    p {
+        color: white;
+        font-family: $clanBook;
+        font-size: 0.75rem;
+        line-height: 1.9;
+    }
+
+    h6 {
+        color: white;
+        font-size: 0.6275rem;
+        line-height: 1.7;
+    }
+
+    &__image {
+
+         height: 100%;
+         width: 100%;
+         display: block;
+         position: absolute;
+         top: 0;
+
+
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+
+     }
+
+    @mixin atLarge {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h6 {
+            font-size: 0.6875rem;
+        }
+
+    }
+
+}

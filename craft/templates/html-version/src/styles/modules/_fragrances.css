@@ -1,0 +1,142 @@
+.fragrances {
+	height: auto;
+	display: block;
+	position: relative;
+	/*padding-top: 7rem;*/
+
+	padding-top: 0;
+	padding-bottom: 0;
+
+	h1 {
+		color: #ffffff;
+		font-size: 2.40rem;
+		line-height: 1.25;
+		margin-bottom: 1rem;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	h2 {
+		color: #000000;
+		font-size: 0.95rem;
+		line-height: 1;
+	}
+
+	h3 {
+		color: #000000;
+	}
+
+	p {
+		color: #ffffff;
+		font-size: 1.000rem;
+        line-height: 1.9;
+		font-family: 'factoria', serif;
+	}
+
+	img {
+		width: 36%;
+	}
+
+	&__image {
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top left;
+		background-color: black;
+	}
+
+	&__gradient-overlay {
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgb(34, 37, 40);
+		background: -moz-linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		background: -webkit-linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		background: linear-gradient(270deg, rgba(34, 37, 40, 0) 37%, rgba(0, 0, 0, 0.8533788515406162) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(
+				startColorstr="#222528",
+				endColorstr="#000000",
+				GradientType=1
+			);
+	}
+
+	&__ht-default {
+		height: 600%;
+	}
+
+	&__pg-default {
+		padding-top: 200px;
+		padding-bottom: 50px;
+	}
+
+	&__product-default {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	&__amplify-default {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	&__padding {
+		padding-top: 14rem;
+		padding-bottom: 9rem;
+	}
+
+	@mixin atSmall {
+	}
+
+	@mixin atMedium {
+		h1 {
+			font-size: 2.15rem;
+		}
+
+		h2 {
+			font-size: 1.2rem;
+		}
+
+		p {
+			padding-right: 8rem;
+		}
+	}
+
+	@mixin atLarge {
+
+		p {
+			padding-right: 6rem;
+		}
+		
+	}
+
+	@mixin atXXLarge {
+		h1 {
+			font-size: 2.4375rem;
+			letter-spacing: 10px;
+		}
+
+		.head-text h2 {
+			font-size: 3.000rem;
+			text-align: center;
+			text-transform: uppercase;
+			padding-top: 50px;
+			color: #ffffff;
+			letter-spacing: 33px;
+    		padding-left: 91px;
+		}
+		
+		p {
+			padding-right: 3.05rem;
+			color: #ffffff;
+			text-align: center;
+		}
+	}
+}

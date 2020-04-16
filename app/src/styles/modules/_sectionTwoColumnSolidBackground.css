@@ -13,6 +13,10 @@
         color: white;
     }
 
+    h3 {
+        font-size: 3.125rem;
+    }
+
     p {
 
         font-size: 0.675rem;
@@ -24,7 +28,7 @@
 
     a {
         color: white;
-    }
+    } 
 
     &__background {
 
@@ -38,14 +42,15 @@
     }
 
     &__oils {
-        height: 100px;
+        height: 50px;
         display: grid;
         position: relative;
         top: 0;
         align-items: center;
+        padding-right: 79px;
+        margin-bottom: 50px;
 
         img {
-            width: 80px;
         }
     }
 
@@ -57,7 +62,6 @@
         align-items: center;
 
         img {
-            width: 80px;
         }
     }
     

@@ -41,14 +41,14 @@ h4 {
 
 p {
   color: white;
-  font-size: 0.675rem;
+  font-size: 1rem;
   line-height: 1.9;
   font-family: factoria, serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2px;
   padding-top: 10px;
-  padding-left: 1rem;
+  padding-left: 0rem;
   padding-right: 1rem;
   margin-bottom: 1.25rem;
 
@@ -207,7 +207,7 @@ em {
   }
 
   p {
-    padding-left: 2rem;
+    padding-left: 0rem;
   }
 }
 
@@ -215,6 +215,7 @@ em {
   h1 {
     font-size: 6rem;
   }
+  
 
   p {
     margin-top: 4px;

@@ -1,0 +1,9 @@
+{% if block.type == 'calloutLarge' %}
+<div class="{{ block.rowClasses | default('row justify-content-center') }}">
+    <div class="{{ block.columnClasses | default('col-11 col-md-9 py-4') }}">
+        <div class="callout callout__large {% if block.hideCalloutAccent %}callout--no-before{% endif %}">
+            {{ block.calloutContent }}
+        </div>
+    </div>
+</div>    
+{% endif %}

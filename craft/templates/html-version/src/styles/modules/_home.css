@@ -1,0 +1,41 @@
+.home {
+
+    .headerBackgroundVideo--video-js .vjs-tech {
+
+        top: 115%;
+
+    }
+
+
+    @mixin atMedium {
+
+        .headerBackgroundVideo--video-js .vjs-tech {
+
+            top: 95%;
+
+        }
+
+    }
+
+    @mixin atXXLarge {
+
+        .headerBackgroundVideo--video-js .vjs-tech {
+
+            top: 105%; 
+
+        }
+
+
+        .sectionSingleColumn {
+
+            p {
+                width: 85%;
+            }
+
+        }
+
+    }
+
+
+
+}

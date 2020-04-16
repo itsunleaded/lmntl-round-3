@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.41 20.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>facebook-icon</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1" d="M10.21,0a10.21,10.21,0,1,0,10.2,10.2A10.21,10.21,0,0,0,10.21,0M14.1,5.2H12.69c-1.11,0-1.32.52-1.32,1.29V8.2H14v2.66H11.37V17.7H8.61V10.86H6.31V8.2h2.3v-2A3.21,3.21,0,0,1,12,2.71H14.1Z"/>
+    </g>
+  </g>
+</svg>

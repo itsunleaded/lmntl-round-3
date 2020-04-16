@@ -1,0 +1,9 @@
+{% if block.type == 'smallerList' %}
+<div class="{{ block.rowClasses | default('row justify-content-center') }}">
+    <div class="{{ block.columnClasses | default('col-11 col-md-9 py-4') }}">
+        <div class="list__smaller">
+            {{ block.listContent }}
+        </div>
+    </div>
+</div>
+{% endif %}

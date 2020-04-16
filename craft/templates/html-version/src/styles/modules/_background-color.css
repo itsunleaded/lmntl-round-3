@@ -1,0 +1,27 @@
+.background-color {
+
+    &--white {
+        background: white;
+     }
+
+    &--light-gray {
+
+        background: $lightGray;
+
+     }
+
+
+    &--dark-gray {
+
+         background: $darkGray;
+
+     }
+
+     &--darker-gray {
+
+        background: $darkerGray;
+
+      }
+
+
+}

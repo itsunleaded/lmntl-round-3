@@ -1,0 +1,69 @@
+.sectionTwoColumnBackgroundImage {
+
+    position: relative;
+
+    h2 {
+        font-size: 1.35rem;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        color: white;
+        font-size: 0.625rem;
+        line-height: 1.95;
+    }
+
+    a {
+        font-family: inherit;
+        font-size: inherit;
+        color: #ffffff;
+        border: 1px solid white;
+        pointer-events: auto;
+    }
+
+    &__image {
+         height: 100%;
+         width: 100%;
+         display: block;
+         position: absolute;
+         top: 0;
+
+
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+     }
+
+     @mixin atMedium {
+
+         h2 {
+
+             font-size: 1.05rem;
+
+         }
+
+     }
+
+
+    @mixin atLarge {
+
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+    }
+
+
+    @mixin atXXLarge {
+
+
+        h2 {
+            font-size: 1.625rem;
+        }
+
+    }
+
+}

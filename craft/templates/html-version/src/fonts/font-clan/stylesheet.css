@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'ClanOT-ExtdMedium';
+    src: url('../fonts/font-clan/ClanOT-ExtdMedium.eot');
+    src: url('../fonts/font-clan/ClanOT-ExtdMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/font-clan/ClanOT-ExtdMedium.woff2') format('woff2'),
+    url('../fonts/font-clan/ClanOT-ExtdMedium.woff') format('woff'),
+    url('../fonts/font-clan/ClanOT-ExtdMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClanOT-ExtdBook';
+    src: url('../fonts/font-clan/ClanOT-ExtdBook.eot');
+    src: url('../fonts/font-clan/ClanOT-ExtdBook.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/font-clan/ClanOT-ExtdBook.woff2') format('woff2'),
+    url('../fonts/font-clan/ClanOT-ExtdBook.woff') format('woff'),
+    url('../fonts/font-clan/ClanOT-ExtdBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClanOT-ExtdBold';
+    src: url('../fonts/font-clan/ClanOT-ExtdBold.eot');
+    src: url('../fonts/font-clan/ClanOT-ExtdBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/font-clan/ClanOT-ExtdBold.woff2') format('woff2'),
+    url('../fonts/font-clan/ClanOT-ExtdBold.woff') format('woff'),
+    url('../fonts/font-clan/ClanOT-ExtdBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

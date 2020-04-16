@@ -1,0 +1,28 @@
+{% if block.type == 'secondaryNavigation' %}
+<div class="{{ block.rowClasses | default('row') }}">
+    <div class="{{ block.columnClasses | default('col-12 py-4') }}">
+        <div class="products__navigation"> 
+            <h2>{{ block.navigationTitle }}</h2>
+            {% if block.navigationLinks %}
+            <ul>
+                {% for link in block.navigationLinks %} 
+                <li>
+                    {% if block.navigationColor %}
+                    <a href="{{ link.url }}" {% if craft.request.lastSegment == link.slug %}class="products__navigation--active"{% endif %}>
+                        <span style="color: {{ block.navigationColor }}">
+                        {{ link.title }}
+                        </span>
+                    </a>
+                    {% else %}
+                    <a href="{{ link.url }}" {% if craft.request.lastSegment == link.slug %}class="products__navigation--active"{% endif %}>
+                        {{ link.title }}
+                    </a>
+                    {% endif %}
+                </li> 
+                {% endfor %} 
+            </ul>
+            {% endif %}
+        </div>                    
+    </div>
+</div>
+{% endif %} 

@@ -10262,14 +10262,14 @@ h4 {
 }
 p {
   color: white;
-  font-size: 0.675rem;
+  font-size: 1rem;
   line-height: 1.9;
   font-family: factoria, serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2px;
   padding-top: 10px;
-  padding-left: 1rem;
+  padding-left: 0rem;
   padding-right: 1rem;
   margin-bottom: 1.25rem;
 }
@@ -10402,13 +10402,14 @@ em:hover {
   }
 
   p {
-    padding-left: 2rem;
+    padding-left: 0rem;
   }
   }
 @media (min-width: 1200px){
   h1 {
     font-size: 6rem;
   }
+  
 
   p {
     margin-top: 4px;
@@ -10632,6 +10633,13 @@ header #menu-button i {
 
 
 }
+.section h4 {
+        font-size: 1.675rem;
+        letter-spacing: .7rem;
+      }
+.section h3 {
+        font-size: 3.75rem;
+    }
 .section__image {
 		height: 100%;
 		width: 100%;
@@ -10728,6 +10736,9 @@ header #menu-button i {
 	padding-top: 8rem;
 	padding-bottom: 1rem;
 }
+.secondaryHeader .header_lowerc {
+        font-size: 2.45rem;
+    }
 .secondaryHeader__image {
 		height: 100%;
 		width: 100%;
@@ -10814,12 +10825,12 @@ header #menu-button i {
 @media (min-width: 1200px){
 
 		.secondaryHeader .container {
-			padding-left:225px;
+			padding-left:150px;
 		}
 
 		.secondaryHeader__product {
 			margin-top: -50px;
-			margin-left: 0px;
+			margin-left: 100px;
 		
 		}
   }
@@ -11842,6 +11853,9 @@ header #menu-button i {
         display: block;
         color: white;
     }
+.sectionTwoColumnSolidBackground h3 {
+        font-size: 3.125rem;
+    }
 .sectionTwoColumnSolidBackground p {
 
         font-size: 0.675rem;
@@ -11864,15 +11878,16 @@ header #menu-button i {
 
     }
 .sectionTwoColumnSolidBackground__oils {
-        height: 100px;
+        height: 50px;
         display: grid;
         position: relative;
         top: 0;
         -webkit-box-align: center;
                 align-items: center;
+        padding-right: 79px;
+        margin-bottom: 50px;
     }
 .sectionTwoColumnSolidBackground__oils img {
-            width: 80px;
         }
 .sectionTwoColumnSolidBackground__crystals {
         height: 100px;
@@ -11883,7 +11898,6 @@ header #menu-button i {
                 align-items: center;
     }
 .sectionTwoColumnSolidBackground__crystals img {
-            width: 80px;
         }
 @media (min-width: 425px) {
 
@@ -11951,6 +11965,8 @@ header #menu-button i {
 .aboutOils h4 {
 		color: #000000;
 		padding-left: 150px;
+		font-size: 1.875rem;
+		letter-spacing: 1.5rem !important;
 	}
 .aboutOils p {
 		color: #000000;
@@ -12010,7 +12026,7 @@ header #menu-button i {
   }
 @media (min-width: 1200px){
 		.aboutOils h1 {
-			font-size: 16.4375rem;
+			font-size: 12.4375rem;
 			margin-left:-20px;
 			padding-left: 150px;
 			letter-spacing: 21px;
@@ -12067,6 +12083,11 @@ header #menu-button i {
 		color: #000000;
 		padding-left: 150px;
 	}
+.powerOfCrystals h4 {
+		color: #000000;
+		font-size: 1.875rem;
+		letter-spacing: 1.5rem !important;
+	}
 .powerOfCrystals p {
 		color: #000000;
 		font-size: 1.000rem;
@@ -12108,9 +12129,6 @@ header #menu-button i {
 @media (min-width: 768px) {
 		.powerOfCrystals h1 {
 			font-size: 9.4375rem;
-		}
-		.powerOfCrystals h4 {
-			font-size: 1.055rem;
 		}
   }
 @media (min-width: 1200px){

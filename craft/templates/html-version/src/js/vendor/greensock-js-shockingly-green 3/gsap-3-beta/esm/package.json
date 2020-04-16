@@ -1,0 +1,47 @@
+{
+    "name": "gsap",
+    "version": "3.0.0-beta.11",
+    "description": "GSAP is a JavaScript library for creating high-performance animations that work in **every** major browser (or anywhere JavaScript runs). No other library delivers such advanced sequencing, reliability, API efficiency, and tight control while solving real-world problems on over 8 million sites. GSAP works around countless browser inconsistencies. Your animations **just work**. Animate CSS, SVG, canvas, WebGL, React, Vue, custom properties of generic objects, colors, strings...pretty much anything! At its core, GSAP is a property manipulator, updating values over time very quickly with extreme accuracy. And it's up to 20x faster than jQuery! See http://greensock.com/why-gsap/ for details about what makes GSAP so special.",
+    "homepage": "https://greensock.com",
+	"module": "./index.js",
+	"main": "./dist/gsap.js",
+    "types": "gsap.d.ts",
+    "filename": "gsap.min.js",
+	"sideEffects": false,
+    "keywords": [
+		"GSAP",
+		"GreenSock",
+		"animation",
+		"MotionPathPlugin",
+		"motion",
+		"motionPath",
+		"easing",
+		"JavaScript",
+		"PixiPlugin",
+		"CustomEase",
+		"SVG",
+		"3D",
+		"2D",
+		"transform",
+		"morph",
+		"morphing",
+		"SVG",
+		"tweening"
+   ],
+   "maintainers": [
+       {
+           "name": "Jack Doyle",
+		   "email": "jack@greensock.com",
+           "web": "https://greensock.com" 
+       } 
+   ],
+  "license": "Standard 'no charge' license: https://greensock.com/standard-license. Club GreenSock members get more: https://greensock.com/licensing/. Why GreenSock doesn't employ an MIT license: https://greensock.com/why-license/",
+   "bugs": {
+       "url": "https://greensock.com/forums/"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/greensock/GreenSock-JS" 
+   } 
+
+}

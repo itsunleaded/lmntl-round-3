@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>LMNTL</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style type="text/css">
+        .preloader {
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10000;
+            background: rgb(34,37,40);
+            background: -moz-linear-gradient(180deg, rgba(34,37,40,1) 0%, rgba(91,103,113,1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(34,37,40,1) 0%, rgba(91,103,113,1) 100%);
+            background: linear-gradient(180deg, rgba(34,37,40,1) 0%, rgba(91,103,113,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222528",endColorstr="#5b6771",GradientType=1);
+        }
+        .preloader svg {
+            overflow: visible;
+        }
+        .preloader svg path, .preloader svg polygon {
+            
+            fill: #FFF;
+        }
+
+        #O, #X, #Y, #LOW_CARBON {
+            opacity: 0;
+        }
+
+        #Ventures {
+            opacity: 0;
+        }
+
+        .v-wrap {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+        .v-center {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+    </style>
+
+
+</head>
+
+  <body>
+
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="v-wrap">
+            <div class="v-center">
+
+                    <svg version="1.1" id="preload-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                         y="0px" viewBox="0 0 318.2 133" width="318" height="133" style="enable-background:new 0 0 318.2 133;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:none !important;stroke:#FF0000;stroke-width:20;stroke-miterlimit:10;}
+                    </style>
+                    <defs>
+                        <mask id="Mask"> 
+                            <path id="lower-mask" class="st0" d="M187.7,39c0,0-10.3,18.1-25.7,13.1S144.5,41.7,142.9,36"/>
+                            <path id="upper-mask" class="st0" d="M135.6,18c0,0,5.2-13.7,26.4-14.7S180.6,20,180.6,20"/>
+                        </mask>
+                    </defs>
+                    <g>
+                        <g id="Ventures">
+                                <polygon points="6.61 0.54 4.22 0.54 4.22 25.02 2.39 25.02 2.39 0.54 0 0.54 0 27.41 20.6 27.41 20.6 25.02 6.61 25.02 6.61 0.54" style="fill: #fff"/>
+                                <polygon points="187.07 25.02 187.07 0.54 184.68 0.54 184.68 25.02 182.84 25.02 182.84 0.54 180.46 0.54 180.46 27.41 201.05 27.41 201.05 25.02 187.07 25.02" style="fill: #fff"/>
+                                <rect x="136.05" y="0.51" width="23.32" height="2.39" style="fill: #fff"/>
+                                <polygon points="136.06 6.61 146.52 6.61 146.52 27.25 148.91 27.25 148.91 6.61 159.37 6.61 159.37 4.22 136.06 4.22 136.06 6.61" style="fill: #fff"/>
+                                <polygon points="54.19 16.58 37.61 0 37.61 3.52 53.91 19.82 54.3 20.2 54.51 19.78 68.33 5.96 68.33 27.31 70.81 27.31 70.81 0.8 70.39 0.38 54.19 16.58" style="fill: #fff"/>
+                                <polygon points="37.61 6.44 37.61 27.31 40.1 27.31 40.1 11.6 51.39 22.89 53.15 21.13 38.03 6.01 37.61 6.44" style="fill: #fff"/>
+                                <polygon points="113.69 17.1 93.83 1.08 93.2 0.57 93.2 3.73 116.12 22.28 116.16 0.81 113.69 0.81 113.69 17.1" style="fill: #fff"/>
+                                <polygon points="93.18 6.03 93.18 27.38 95.67 27.38 95.67 11.34 116.13 27.7 116.13 24.43 93.18 6.03" style="fill: #fff"/>
+                        </g>
+                        </g>
+
+                    </svg>
+                           
+    
+            </div>
+        </div>
+    </div>
+    <!--END-->
+
+    <!--Header-->
+    <header>
+
+        <!--Fixed BG-->
+        <div class="inverted--fixed-bg off"></div>
+
+        <!--Overlay-->
+        <div id="mobile-overlay" class="mobile-overlay"></div>
+        <!--END-->
+
+        <div class="container">
+
+            <!--Main Wrapper-->
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-12">
+
+                    <!--Row-->
+                    <div class="row align-items-center align-items-md-start">
+
+                        <!--Logo-->
+                        <div class="col-8 col-md-4">
+                            <svg id="logo" width="216" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.06 34.86">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <title>oxy-low-carbon-logo</title>
+                                <g id="eb017a90-cc35-454c-a46d-c71349ba621e" data-name="Layer 2">
+                                    <g id="a3c271fe-2583-4a78-bab2-436c39036754" data-name="Nav">
+                                      <g>
+                                        <polygon points="6.61 0.54 4.22 0.54 4.22 25.02 2.39 25.02 2.39 0.54 0 0.54 0 27.41 20.6 27.41 20.6 25.02 6.61 25.02 6.61 0.54" style="fill: #fff"/>
+                                        <polygon points="187.07 25.02 187.07 0.54 184.68 0.54 184.68 25.02 182.84 25.02 182.84 0.54 180.46 0.54 180.46 27.41 201.05 27.41 201.05 25.02 187.07 25.02" style="fill: #fff"/>
+                                        <rect x="136.05" y="0.51" width="23.32" height="2.39" style="fill: #fff"/>
+                                        <polygon points="136.06 6.61 146.52 6.61 146.52 27.25 148.91 27.25 148.91 6.61 159.37 6.61 159.37 4.22 136.06 4.22 136.06 6.61" style="fill: #fff"/>
+                                        <polygon points="54.19 16.58 37.61 0 37.61 3.52 53.91 19.82 54.3 20.2 54.51 19.78 68.33 5.96 68.33 27.31 70.81 27.31 70.81 0.8 70.39 0.38 54.19 16.58" style="fill: #fff"/>
+                                        <polygon points="37.61 6.44 37.61 27.31 40.1 27.31 40.1 11.6 51.39 22.89 53.15 21.13 38.03 6.01 37.61 6.44" style="fill: #fff"/>
+                                        <polygon points="113.69 17.1 93.83 1.08 93.2 0.57 93.2 3.73 116.12 22.28 116.16 0.81 113.69 0.81 113.69 17.1" style="fill: #fff"/>
+                                        <polygon points="93.18 6.03 93.18 27.38 95.67 27.38 95.67 11.34 116.13 27.7 116.13 24.43 93.18 6.03" style="fill: #fff"/>
+                                      </g>
+                                    </g>
+                                  </g>
+                            </svg>
+                        </div>
+                        <!--END-->
+
+                        <!--Menu Button-->
+                        <div class="col-4 text-right d-md-none">
+                            <div id="menu-button" class="d-block"><i class="fa fa-bars text-white" aria-hidden="true"></i></div>
+                        </div>
+                        <!--END-->
+
+                        <!--Navigation-->
+                        <div class="col-12 col-md-8 text-md-right">
+                            <nav class="navigation">
+                                <ul>
+                                    <li>
+                                        <a href="why-lmntl.html" class="navigation--button">
+                                            Why LMNTL
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="fragrances.html" class="navigation--button">
+                                            Fragrances
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="customize.html" class="navigation--button">
+                                            Customize
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--END-->
+
+                    </div>
+                    <!--END-->
+
+
+                </div>
+            </div>
+            <!--END-->
+
+        </div>
+
+    </header>
+    <!--END-->
+
+    <!--secondaryHeader-->
+    <section class="section secondaryHeader">
+
+        <!--Background-->
+        <div class="secondaryHeader__image" style="background-image: url('images/home/header-bg.jpg');"></div>
+
+        <div class="container">
+            <div class="row justify-content-center justify-content-sm-start secondaryHeader__pad">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+                    <h2>A natural way to feel</h2>
+                    <h1>passionate</h1>
+                    <p class="no-left-pad">
+                        Harness the power of nature.<br>All natural fragrances to amplify your day.
+                    </p>
+                    <p>
+                        <em><a href="#">Find the scent that's right for your</a></em>
+                    </p>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 offset-xs-3 pt-5">
+                    <img class="secondaryHeader__product" src="images/home/bottle-m.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END-->
+
+    <!--sectionTitleSubhead-->
+    <section class="section sectionTitleSubhead">
+
+        <!--Background-->
+        <div class="sectionTitleSubhead__image" style="background-image: url('images/home/2.jpg');"></div>
+        
+        <!--Gradient Overlay-->
+        <div class=""></div>
+        
+        <div class="container">
+            <div class="row justify-content-center justify-content-sm-start">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h1>Discover<br>the elements</h2>
+                        <p>
+                            LMNTL is about the essentials. Bringing together all natural botanical and mineral elements to hand-craft fragrances that have less of what you don't need and more of what you do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END-->
+
+    <!--sectionTwoColumnImageBackground-->
+    <section class="section sectionTwoColumnSolidBackground">
+        
+        <!--Dual Fluid Background-->
+        <div class="sectionTwoColumnSolidBackground__background">
+            <!--Left-->
+             <div class="col-12 col-md-6 sectionTwoColumnSolidBackground--match-left sectionTwoColumnSolidBackground--background-column" style="background-image: url('images/home/3.jpg');">
+             <!--Background-->
+             </div>
+             <!--Right--> 
+             <div class="col-12 col-md-6 float-right sectionTwoColumnSolidBackground--match-right sectionTwoColumnSolidBackground--background-column" style="background-image: url('images/home/4.jpg');">
+             </div> 
+        </div>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 py-5 pl-md-5 pr-md-5 pl-xl-3 sectionTwoColumnSolidBackground--match-left">
+                    <div class="d-block py-3 pl-3 pr-3">
+                        <div class="col-12 text-center">
+                            <h2 style="color: white;">Essential oils</h2>
+                            <img class="mb-2" src="images/home/Herbs.png" style="width: 85%;">
+                            <p>
+                                <span>Natural botanical compounds and aromas have been used for thousands of years to promote relaxation,  boost creativity andeven ease aches and pains.</span>
+                            </p>
+                            <p>
+                                <em><a href="#">Learn more about the oils</a></em>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 py-5 pl-md-5 pr-md-5 pl-xl-3 sectionTwoColumnSolidBackground--match-right">
+                    <div class="d-block py-3 pl-3 pr-3">
+                        <div class="col-12 text-center">
+                            <h2>Crystals</h2>
+                            <img class="mb-2" src="images/home/Crystals.png" style="width: 85%;">
+                            <p>
+                                <span>Crystals geometric structures harness and direct frequencies and energy flows balancing and amplifying the energy of things they touch.</span>
+                            </p>
+                            <p>
+                            <em><a class="uppercase mt-1" href="#">Learn more about the crystals</a></em>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sectionTitleSubheadLeft-->
+    <section class="section sectionTitleSubheadLeft">
+
+        <!--Background-->
+        <div class="sectionTitleSubheadLeft__image" style="background-image: url('images/home/1.jpg');"></div>
+        
+        <div class="container">
+            <div class="row justify-content-center justify-content-sm-start">
+                <div class="col-12 text-left">
+                        <h2>Find your fragrance</h2>
+                        <p>Take the quiz to find the fragrance that's essential to your life or see the full line.</br></br>
+                        <p>
+                            <em><a class="" href="#">Take the quiz</a></em> 
+                            <em><a class="" href="#">See all scents</a></em>
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END-->
+
+    <!--Footer-->
+    <footer class="footer">
+    </footer>
+
+    <!--App.js-->
+    <script src="js/App.js"></script>
+  </body>
+</html>

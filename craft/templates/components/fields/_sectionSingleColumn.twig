@@ -1,0 +1,25 @@
+<!--Single Column-->
+<section class="section {{ block.sectionClasses }}" {% if block.sectionBackgroundColor %}style="background-color: {{ block.sectionBackgroundColor }};"{% endif %}>
+    {% set image = block.sectionBackgroundImage.one() %}
+    {% set imageStyle = block.backgroundImageStyle %}
+    {% if image %}
+    <!--Background-->
+    <div class="{{ imageStyle }}" style="background-image: url('{{ image.url }}')"></div>
+    <!--END-->
+    {% endif %}
+
+    <div class="container">
+        {% for row in block.superTableMatrix.all() %}
+            {% for block in row.matrix.all() %}
+            
+                {% include('components/blocks/_calloutSmall') %}
+                {% include('components/blocks/_calloutLarge') %}
+                {% include('components/blocks/_calloutXlarge') %}
+                {% include('components/blocks/_smallerList') %}
+                {% include('components/blocks/_standardList') %}
+                {% include('components/blocks/_largerList') %}
+
+            {% endfor %}
+        {% endfor %}
+    </div>
+</section>
