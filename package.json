@@ -22,7 +22,7 @@
 		"ajv": "^6.5.1",
 		"bootstrap": "^4.4.1",
 		"font-awesome": "^4.7.0",
-		"gsap": "^3.1.1",
+		"gsap": "^3.6.0",
 		"gulp-cli": "^2.0.1",
 		"imagefill": "0.0.3",
 		"imagesloaded": "^4.1.4",
